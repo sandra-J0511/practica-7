@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7 - JavaScript Interactivo</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body id="cuerpoPagina" class="bg-light py-4">
+
+    <div class="container my-4">
+        <h1 class="text-center mb-5 fw-bold text-primary">Práctica 7: Ejercicios de JavaScript</h1>
+
+        <!-- Sección a) Variables y salida -->
+        <section class="card mb-4 shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="h4 card-title text-secondary">a) Variables y Salida</h2>
+                <p class="card-text">Haz clic en el botón para mostrar la información del estudiante.</p>
+                <button id="btnMostrarInfo" class="btn btn-primary mb-3">Mostrar Datos</button>
+                <p id="salidaDatos" class="fw-bold fs-5 text-dark"></p>
+            </div>
+        </section>
+
+        <!-- Sección b) Calculadora de calificaciones -->
+        <section class="card mb-4 shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="h4 card-title text-secondary">b) Calculadora de Calificaciones</h2>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-4">
+                        <label for="parcial1" class="form-label">Parcial 1:</label>
+                        <input type="number" id="parcial1" class="form-control" placeholder="0 - 100" min="0" max="100">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="parcial2" class="form-label">Parcial 2:</label>
+                        <input type="number" id="parcial2" class="form-control" placeholder="0 - 100" min="0" max="100">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="parcial3" class="form-label">Parcial 3:</label>
+                        <input type="number" id="parcial3" class="form-control" placeholder="0 - 100" min="0" max="100">
+                    </div>
+                </div>
+                <button id="btnCalcularPromedio" class="btn btn-success mb-3">Calcular Promedio</button>
+                <div id="resultadoCalificacion" class="fw-bold fs-5"></div>
+            </div>
+        </section>
+
+        <!-- Sección c) Lista dinámica -->
+        <section class="card mb-4 shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="h4 card-title text-secondary">c) Lista Dinámica</h2>
+                <div class="input-group mb-3">
+                    <input type="text" id="inputElemento" class="form-control" placeholder="Escribe un elemento para la lista...">
+                    <button id="btnAgregar" class="btn btn-primary">Agregar</button>
+                    <button id="btnLimpiar" class="btn btn-danger">Limpiar Lista</button>
+                </div>
+                <ul id="listaDinamica" class="list-group"></ul>
+            </div>
+        </section>
+
+        <!-- Sección d) Cambio de estilos -->
+        <section id="seccionEstilos" class="card mb-4 shadow-sm border-0 transition-bg">
+            <div class="card-body">
+                <h2 class="h4 card-title text-secondary">d) Cambio de Estilos</h2>
+                <p>Haz clic en los botones para cambiar el color de fondo de esta sección:</p>
+                <div class="d-flex gap-2">
+                    <button id="btnFondoAzul" class="btn btn-outline-primary">Fondo Azul Suave</button>
+                    <button id="btnFondoVerde" class="btn btn-outline-success">Fondo Verde Suave</button>
+                    <button id="btnFondoAmarillo" class="btn btn-outline-warning">Fondo Amarillo Suave</button>
+                    <button id="btnFondoRestaurar" class="btn btn-outline-secondary">Restaurar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+<script src="js/script.js"></script>
+</html>
