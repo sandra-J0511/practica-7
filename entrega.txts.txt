@@ -1,0 +1,9 @@
+Práctica 7 — Introducción a JavaScript
+Alumno: sandra Guadalupe jimemenez perez
+Matrícula: 100023807
+
+Link del repositorio en GitHub:
+https://github.com/sandra-J0511/practica-7.git
+
+Link de la página publicada en GitHub Pages:
+https://github.com/sandra-J0511/practica-7.git
